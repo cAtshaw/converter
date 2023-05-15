@@ -1,0 +1,83 @@
+body {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.hero {
+  width: 550px;
+  color: white;
+  width: 100%;
+  height: 300px;
+  background-color: #6943ff;
+  border: solid 1px #6943ff;#
+  margin-bottom: 0;
+}
+
+#enterbox::-webkit-outer-spin-button,
+#enterbox::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#enterbox {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  border-radius: 4px;
+  border: solid 1px white;
+  background-color: #6943ff;
+  height: 90px;
+  width: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+#convert-btn {
+  font-weight: bold;
+  border: solid white 1px;
+  background-color: white;
+  border-radius: 4px;
+  color: #3d3d3d;
+  font-family: "Inter", sans-serif;
+  width: 125px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-container {
+  width: 100%;
+  height: 750px;
+  background-color: #1f2937;
+  text-align: center;
+  border: solid 1px #1f2937;
+}
+
+.valueoutput {
+  color:  #CCC1FF;
+  background-color:  #273549;
+  border: solid #273549 1px;
+  margin-bottom: 40px;
+  width: 500px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#length, #volume, #mass {
+    border-radius: 4px;
+    margin-top: 70px;
+}
+
+.calcreturn {
+    color: white;
+}
