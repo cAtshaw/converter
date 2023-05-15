@@ -2,10 +2,9 @@
 //html ids
 const convertBtn = document.getElementById("convert-btn")
 const inputBtn = document.getElementById("enterbox")
-const lengthOutput = document.getElementById("length")
-const volumeOutput = document.getElementById("volume")
-const massOutput = document.getElementById("mass")
-
+const lengthReturn = document.getElementById("lengthreturn")
+const volReturn = document.getElementById("volreturn")
+const massReturn = document.getElementById("massreturn")
 
 //conversions
 const meterToFeet = 3.281
@@ -16,8 +15,8 @@ const kiloToPound = 2.204
 
 //conversion function
 convertBtn.addEventListener("click", () => {
-    let baseValue = inputBtn.value;
-    lengthOutput.textContent = `${baseValue} meter = ${baseValue * meterToFeet} feet`
-    volumeOutput.textContent = `${baseValue} liter = ${baseValue * literToGallon} gallon`
-    massOutput.textContent = `${baseValue} kilograms = ${baseValue * kiloToPound} pound`
+    let baseValue = inputBtn.value
+    lengthReturn.textContent = `${baseValue} meter = ${baseValue * meterToFeet.toFixed(2)} feet`
+    volReturn.textContent = `${baseValue} liter = ${baseValue * literToGallon.toFixed(2)} gallon`
+    massReturn.textContent = `${baseValue} kilograms = ${baseValue * kiloToPound.toFixed(2)} pound`
 })
