@@ -16,7 +16,7 @@ const kiloToPound = 2.204
 //conversion function
 convertBtn.addEventListener("click", () => {
     let baseValue = inputBtn.value
-    lengthReturn.textContent = `${baseValue} meter = ${baseValue * meterToFeet.toFixed(2)} feet`
-    volReturn.textContent = `${baseValue} liter = ${baseValue * literToGallon.toFixed(2)} gallon`
-    massReturn.textContent = `${baseValue} kilograms = ${baseValue * kiloToPound.toFixed(2)} pound`
+    lengthReturn.textContent = `${baseValue} meter = ${baseValue * meterToFeet.toFixed(3)} feet`
+    volReturn.textContent = `${baseValue} liter = ${baseValue * literToGallon.toFixed(3)} gallon`
+    massReturn.textContent = `${baseValue} kilograms = ${baseValue * kiloToPound.toFixed(3)} pound`
 })
