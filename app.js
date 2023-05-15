@@ -1,17 +1,23 @@
+
+//html ids
 const convertBtn = document.getElementById("convert-btn")
 const inputBtn = document.getElementById("enterbox")
 const lengthOutput = document.getElementById("length")
 const volumeOutput = document.getElementById("volume")
 const massOutput = document.getElementById("mass")
 
-// 1 meter = 3.281 feet
-// 1 liter = 0.264 gallon     Conversions
-// 1 kilogram = 2.204 pound
+
+//conversions
+const meterToFeet = 3.281
+const literToGallon = 0.264
+const kiloToPound = 2.204
 
 
-// first create 
 
-
+//conversion function
 convertBtn.addEventListener("click", () => {
-
+    let baseValue = inputBtn.value;
+    lengthOutput.textContent = `${baseValue} meter = ${baseValue * meterToFeet} feet`
+    volumeOutput.textContent = `${baseValue} liter = ${baseValue * literToGallon} gallon`
+    massOutput.textContent = `${baseValue} kilograms = ${baseValue * kiloToPound} pound`
 })
